@@ -1,5 +1,5 @@
 import React from 'react'
-import login from './loginogin'
+import login from './login'
 import useLocalStorage from '../hooks/useLocalStorage';
 import dashboard from './dashboard'
 import { contactsProvider } from '../contexts/contactsProvider'
@@ -20,8 +20,8 @@ function app() {
   )
 
   return (
-    id ? dashboard : <Login onIdSubmit={setId} />
+    id ? dashboard : <login onIdSubmit={setId} />
   )
 }
 
-export default App;
+export default app;
